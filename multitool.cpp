@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "Windows.h"
 #include <thread>
 #include <chrono>
@@ -6,7 +6,7 @@
 
 using namespace std;
 typedef unsigned short int USHORT;
-const string version = "demo";
+const string version = "full";
 
 double sq(double integer);
 double cb(double integer);
@@ -37,12 +37,11 @@ double cb(double integer)
 
 USHORT entry()
 {
-    cls();
     cout << "1. Numbers of Square";
-    cout << "\n2. Numbers of Cube\n";
+    cout << "\n2. Numbers of Cube";
     if (version == "demo")
     {
-        cout << "3. Test";
+        cout << "\n3. Test";
     }
     cout << "\n0. Quit\n!Don't enter letters!\n\nUr Choice->";
     cin >> toolnum;
@@ -81,7 +80,7 @@ void square()
     cout << "Enter a number take for square: " << endl;
     cin >> num;
     cout << "\nUr entered number's square-> " << sq(num) << "cm^2\n\n";
-    cout << "Choose one;\n1. Numbers of Square\n2. Numbers of Cube\n0. Quit\n\nUr Choice->";
+    entry();
     cin >> toolnum;
     myloop();
 }
@@ -92,7 +91,7 @@ void cube()
     cout << "Enter a number for take cube: " << endl;
     cin >> num;
     cout << "\nUr entered number's cube-> " << cb(num) << "cm^3\n\n" << endl;
-    cout << "Choose one;\n1. Numbers of Square\n2. Numbers of Cube\n0. Quit\n\nUr Choice->";
+    entry();
     cin >> toolnum;
     myloop();
 }
@@ -104,5 +103,5 @@ void cls()
 
 void test()
 {
-    system("cd ..");
+    system("");
 }
