@@ -1,8 +1,4 @@
 #include <iostream>
-#include "Windows.h"
-#include <thread>
-#include <chrono>
-#include <cmath>
 
 using namespace std;
 typedef unsigned short int USHORT;
