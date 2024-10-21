@@ -2,7 +2,7 @@
 
 using namespace std;
 typedef unsigned short int USHORT;
-const string version = "full";
+const string version = "demo";
 
 double sq(double integer);
 double cb(double integer);
